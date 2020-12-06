@@ -42,11 +42,11 @@ class mydb:
         link=link[:len(link)-1]
         print(type(link))
         try:
-            s='INSERT INTO items (site,link,price) VALUES ("'+site+'", "'+link+'",'+str(sum)+');'
-            print(s)
+            #s='INSERT INTO items (site,link,price) VALUES ("'+site+'", "'+link+'",'+str(sum)+');'
+            #print(s)
             connection = sqlite3.connect(self.db) 
             crsr = connection.cursor() 
-            print(s)
+            #print(s)
             sql_command = 'INSERT INTO items (site,link,price) VALUES ("'+site+'", "'+link+'",'+str(sum)+');'
             print(sql_command)
             crsr.execute(sql_command) 

@@ -23,7 +23,7 @@ def main():
     db.inititemstable()
     db.addlinks(k.getlink() ,handler.getlinksfromhtmlbylink(k.getlink()))
     #db.getitems()
-    takeitems(k)
+    #takeitems(k)
     print(db.getitems())
     #handler.getprice("https://ksp.co.il/?select=.1044..35.&kg=&sis=&list=1&sort=2&glist=1&uin=123585&txt_search=&buy=&minprice=0&maxprice=0&intersect=..&rintersect=&store_real=")
 
